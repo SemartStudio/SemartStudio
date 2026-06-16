@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Semart Studio — Diseño web profesional, automatizaciones con IA y chatbots 24h para negocios locales." />
+  <title>Semart Studio — Soluciones Digitales con IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo-link">
+        <img src="img/logo-transparent.png" alt="Semart Studio" class="nav-logo" />
+        <span class="nav-logo-label">Semart <em>Studio</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#precios" class="nav-link">Precios</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li>
+          <a href="https://wa.me/34XXXXXXXXX?text=Hola%20Sergio%2C%20me%20interesa%20Semart%20Studio" class="nav-cta" target="_blank">
+            Hablemos
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <!-- Fondo: fachada -->
+    <div class="hero-bg-image">
+      <img src="img/fachada.png" alt="" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Inteligencia Artificial · Negocios Locales</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-line reveal-line">TU NEGOCIO</span>
+          <span class="hero-line reveal-line accent-line">MERECE MÁS</span>
+          <span class="hero-line reveal-line">CLIENTES</span>
+        </h1>
+        <div class="hero-beam"></div>
+        <p class="hero-sub">
+          Diseño web, automatizaciones e IA que captan y fidelizan clientes mientras tú te dedicas a tu negocio.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/34XXXXXXXXX?text=Hola%20Sergio%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Semart%20Studio" class="btn-hero-primary" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Consulta Gratuita
+          </a>
+          <a href="#servicios" class="btn-hero-ghost">Ver Servicios <span class="btn-arrow">↓</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero-stats-bar">
+      <div class="container hero-stats-inner">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="80">0</span><span class="stat-sym">%</span>
+          <span class="stat-label">más visibilidad online</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="24">0</span><span class="stat-sym">h</span>
+          <span class="stat-label">atención automatizada</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-sym">%</span>
+          <span class="stat-label">personalizado a medida</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="48">0</span><span class="stat-sym">h</span>
+          <span class="stat-label">tiempo de respuesta</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEMA / HOOK ===== -->
+  <section class="hook-section">
+    <div class="container hook-inner">
+      <div class="hook-left">
+        <span class="label-tag">El problema</span>
+        <h2 class="section-title">¿Invisible en internet<br/>mientras tus competidores<br/><em>crecen sin parar?</em></h2>
+      </div>
+      <div class="hook-right">
+        <div class="problem-items">
+          <div class="prob-item" data-delay="0">
+            <span class="prob-x">✕</span>
+            <p>Sin web, los clientes ni te encuentran en Google</p>
+          </div>
+          <div class="prob-item" data-delay="100">
+            <span class="prob-x">✕</span>
+            <p>Respondes consultas a mano y pierdes horas</p>
+          </div>
+          <div class="prob-item" data-delay="200">
+            <span class="prob-x">✕</span>
+            <p>Los leads se enfrían antes de que llegues a ellos</p>
+          </div>
+          <div class="prob-item" data-delay="300">
+            <span class="prob-x">✕</span>
+            <p>Clientes que no vuelven y no sabes por qué</p>
+          </div>
+        </div>
+        <div class="solution-pill">
+          <span class="pill-dot"></span>
+          Semart Studio resuelve todo esto. Sin tecnicismos. Sin complicaciones.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-tag">Servicios</span>
+        <h2 class="section-title">Todo lo que tu negocio necesita<br/><em>en un solo sitio</em></h2>
+        <p class="section-sub">Cada servicio es personalizable — pagas solo lo que necesitas, nada más.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Web Profesional -->
+        <div class="svc-card" id="web-profesional">
+          <div class="svc-card-inner">
+            <div class="svc-top">
+              <div class="svc-num">01</div>
+              <div class="svc-badge">Más popular</div>
+            </div>
+            <div class="svc-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Web Profesional</h3>
+            <p>Tu escaparate digital. Diseño a medida que convierte visitas en clientes reales.</p>
+            <ul class="svc-list">
+              <li>Diseño único para tu marca</li>
+              <li>SEO local — aparece en Google</li>
+              <li>Adaptada a móvil (responsive)</li>
+              <li>Integración redes sociales</li>
+              <li>Calendario de reservas online</li>
+              <li>Botón WhatsApp directo</li>
+            </ul>
+            <div class="svc-custom">
+              <span>Ajustable</span> — versión básica disponible si no necesitas todo
+            </div>
+            <a href="#precios" class="svc-link">Ver precios <span>→</span></a>
+          </div>
+          <div class="svc-glow"></div>
+        </div>
+
+        <!-- Automatizaciones -->
+        <div class="svc-card svc-featured" id="automatizaciones">
+          <div class="svc-card-inner">
+            <div class="svc-top">
+              <div class="svc-num">02</div>
+              <div class="svc-badge svc-badge-cyan">Alta demanda</div>
+            </div>
+            <div class="svc-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3>Automatizaciones IA</h3>
+            <p>Tu negocio trabajando 24h. Captación, seguimiento y fidelización en piloto automático.</p>
+            <ul class="svc-list">
+              <li>Recordatorios de citas por WhatsApp</li>
+              <li>Captación y seguimiento de leads</li>
+              <li>Reactivación de clientes inactivos</li>
+              <li>Integración WhatsApp Business</li>
+              <li>App o sistema de reservas</li>
+              <li>Flujos de fidelización</li>
+            </ul>
+            <div class="svc-custom">
+              <span>Ajustable</span> — elige solo las automatizaciones que te interesan
+            </div>
+            <a href="#precios" class="svc-link">Ver precios <span>→</span></a>
+          </div>
+          <div class="svc-glow svc-glow-featured"></div>
+        </div>
+
+        <!-- Chatbot -->
+        <div class="svc-card" id="chatbot">
+          <div class="svc-card-inner">
+            <div class="svc-top">
+              <div class="svc-num">03</div>
+            </div>
+            <div class="svc-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h3>Chatbot 24h con IA</h3>
+            <p>Un empleado virtual que nunca descansa. Responde, filtra y agenda sin que toques nada.</p>
+            <ul class="svc-list">
+              <li>Asistente personalizado con tu info</li>
+              <li>Integrado en web o por separado</li>
+              <li>Responde dudas automáticamente</li>
+              <li>Agenda citas sin intervención</li>
+              <li>Disponible 24h / 7 días</li>
+              <li>Integrable con WhatsApp e Instagram</li>
+            </ul>
+            <div class="svc-custom">
+              <span>Ajustable</span> — se entrena con tus datos reales de negocio
+            </div>
+            <a href="#precios" class="svc-link">Ver precios <span>→</span></a>
+          </div>
+          <div class="svc-glow"></div>
+        </div>
+
+      </div>
+
+      <!-- Pack Completo -->
+      <div class="pack-card">
+        <div class="pack-content">
+          <div class="pack-left">
+            <span class="pack-tag">Pack Completo</span>
+            <h3>Web + Automatizaciones + Chatbot</h3>
+            <p>La solución definitiva. Todo integrado, todo funcionando desde el primer día.</p>
+            <div class="pack-feats">
+              <span><em>✓</em> Web profesional</span>
+              <span><em>✓</em> Automatizaciones IA</span>
+              <span><em>✓</em> Chatbot 24h</span>
+              <span><em>✓</em> Soporte prioritario</span>
+            </div>
+          </div>
+          <div class="pack-right">
+            <div class="pack-price-block">
+              <span class="pack-desde">Desde</span>
+              <span class="pack-price">2.500€</span>
+              <span class="pack-note">precio único</span>
+              <span class="pack-mant">+ 300–500€/mes mantenimiento</span>
+            </div>
+            <a href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Pack%20Completo" class="btn-primary" target="_blank">Solicitar Pack</a>
+            <p class="pack-adj">Ajustamos a tu negocio</p>
+          </div>
+        </div>
+        <div class="pack-beam"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESO ===== -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-tag">Proceso</span>
+        <h2 class="section-title">Empezar es más<br/><em>sencillo de lo que crees</em></h2>
+      </div>
+      <div class="process-track">
+        <div class="process-line"></div>
+        <div class="proc-step">
+          <div class="proc-dot"><span>01</span></div>
+          <h4>Consulta gratuita</h4>
+          <p>Hablamos 20 minutos. Me cuentas tu negocio y objetivos.</p>
+        </div>
+        <div class="proc-step">
+          <div class="proc-dot"><span>02</span></div>
+          <h4>Propuesta a medida</h4>
+          <p>Un plan claro con servicios y precio real, sin sorpresas.</p>
+        </div>
+        <div class="proc-step">
+          <div class="proc-dot"><span>03</span></div>
+          <h4>Desarrollo</h4>
+          <p>Me encargo de todo. Tú revisas y apruebas en cada paso.</p>
+        </div>
+        <div class="proc-step">
+          <div class="proc-dot"><span>04</span></div>
+          <h4>Lanzamiento y soporte</h4>
+          <p>Tu proyecto live. Con soporte continuo y mejoras incluidas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRECIOS ===== -->
+  <section class="pricing-section" id="precios">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-tag">Precios</span>
+        <h2 class="section-title">Planes claros,<br/><em>sin letra pequeña</em></h2>
+        <p class="section-sub">Precios orientativos siempre ajustables a tu realidad. Consulta siempre gratis.</p>
+      </div>
+
+      <div class="price-toggle-wrap">
+        <button class="price-tab active" id="tabOnce">Precio único</button>
+        <button class="price-tab" id="tabMensual">Mantenimiento / mes</button>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <div class="price-label">Esencial</div>
+          <p class="price-desc">Primeros pasos online. Web que te representa.</p>
+          <div class="price-val once-price">
+            <span class="p-currency">€</span><span class="p-num">450</span><span class="p-range">– 900</span>
+          </div>
+          <div class="price-val month-price" style="display:none">
+            <span class="p-currency">€</span><span class="p-num">80</span><span class="p-range">– 150 /mes</span>
+          </div>
+          <ul class="price-feats">
+            <li>Web profesional responsive</li>
+            <li>Hasta 5 secciones</li>
+            <li>SEO básico local</li>
+            <li>Formulario de contacto</li>
+            <li>Botón WhatsApp directo</li>
+            <li class="feat-no">Automatizaciones</li>
+            <li class="feat-no">Chatbot IA</li>
+          </ul>
+          <a href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Plan%20Esencial" class="btn-price-ghost" target="_blank">Empezar</a>
+        </div>
+
+        <div class="price-card price-card-main">
+          <div class="price-popular">Más popular</div>
+          <div class="price-label">Profesional</div>
+          <p class="price-desc">Automatiza, capta y fideliza más clientes.</p>
+          <div class="price-val once-price">
+            <span class="p-currency">€</span><span class="p-num">1.200</span><span class="p-range">– 2.500</span>
+          </div>
+          <div class="price-val month-price" style="display:none">
+            <span class="p-currency">€</span><span class="p-num">180</span><span class="p-range">– 300 /mes</span>
+          </div>
+          <ul class="price-feats">
+            <li>Todo del plan Esencial</li>
+            <li>Web avanzada +10 secciones</li>
+            <li>SEO avanzado + Google Business</li>
+            <li>Integración redes sociales</li>
+            <li>Calendario de reservas</li>
+            <li>Recordatorios automáticos</li>
+            <li>Captación de leads</li>
+          </ul>
+          <a href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Plan%20Profesional" class="btn-price-main" target="_blank">Elegir Plan</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-label">Elite</div>
+          <p class="price-desc">La solución completa. Web, automatización y chatbot IA.</p>
+          <div class="price-val once-price">
+            <span class="p-currency">€</span><span class="p-num">2.500</span><span class="p-range">– 5.000</span>
+          </div>
+          <div class="price-val month-price" style="display:none">
+            <span class="p-currency">€</span><span class="p-num">300</span><span class="p-range">– 500 /mes</span>
+          </div>
+          <ul class="price-feats">
+            <li>Todo del plan Profesional</li>
+            <li>Chatbot IA 24h personalizado</li>
+            <li>WhatsApp + Instagram integrado</li>
+            <li>Reactivación clientes inactivos</li>
+            <li>App de reservas propia</li>
+            <li>Flujos de fidelización</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <a href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Plan%20Elite" class="btn-price-ghost" target="_blank">Elegir Plan</a>
+        </div>
+
+      </div>
+
+      <div class="price-note">
+        <p>¿No sabes qué plan te conviene? <strong>Cuéntame tu negocio y te digo exactamente qué necesitas</strong> — y lo que no necesitas.</p>
+        <a href="https://wa.me/34XXXXXXXXX?text=Necesito%20ayuda%20para%20elegir%20el%20plan%20que%20me%20conviene" class="btn-ghost" target="_blank">Consulta gratuita sin compromiso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="about-section" id="sobre-mi">
+    <!-- Foto flotante fuera de la rejilla -->
+    <div class="about-photo-float">
+      <img src="img/sergio.png" alt="Sergio Martínez — Semart Studio" class="about-img-big" />
+      <div class="about-photo-glow"></div>
+    </div>
+    <div class="container about-grid">
+      <!-- Columna izquierda vacía: la foto flota aquí visualmente -->
+      <div class="about-spacer"></div>
+      <!-- Texto -->
+      <div class="about-text-col">
+        <span class="label-tag">Sobre mí</span>
+        <h2 class="section-title">Hola, soy<br/><em>Sergio Martínez</em></h2>
+        <p class="about-lead">Vengo del mundo real — hostelería y logística — donde vi de primera mano cómo los negocios pierden clientes por no tener presencia digital.</p>
+        <p>Esa realidad me llevó a especializarme en diseño web, automatizaciones e inteligencia artificial. <strong>Mi misión: que los negocios locales compitan online sin necesitar un equipo entero ni gastar una fortuna.</strong></p>
+        <p>No soy un desarrollador que habla de código. Entiendo tu negocio porque he estado ahí. Creo soluciones que funcionan para ti, no para mí.</p>
+        <div class="about-chips">
+          <span>Honestidad</span>
+          <span>Resultados reales</span>
+          <span>Sin tecnicismos</span>
+          <span>Trato personal</span>
+        </div>
+        <div class="about-float-tags">
+          <div class="about-float-tag">24 años</div>
+          <div class="about-float-tag">IA & Digital</div>
+          <div class="about-float-tag">Hostelería & Logística</div>
+        </div>
+        <a href="https://wa.me/34XXXXXXXXX?text=Hola%20Sergio%2C%20me%20gustar%C3%ADa%20hablar%20contigo" class="btn-primary" target="_blank">Hablemos directamente</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTORES ===== -->
+  <section class="sectors-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-tag">Sectores</span>
+        <h2 class="section-title">¿Tu negocio<br/><em>entra aquí?</em></h2>
+      </div>
+      <div class="sectors-grid">
+        <div class="sector-item"><span>🍽️</span><p>Restaurantes</p></div>
+        <div class="sector-item"><span>💅</span><p>Peluquerías</p></div>
+        <div class="sector-item"><span>🏋️</span><p>Gimnasios</p></div>
+        <div class="sector-item"><span>🏥</span><p>Clínicas</p></div>
+        <div class="sector-item"><span>🏠</span><p>Inmobiliarias</p></div>
+        <div class="sector-item"><span>📦</span><p>Comercios</p></div>
+        <div class="sector-item"><span>🔧</span><p>Reformas</p></div>
+        <div class="sector-item"><span>📚</span><p>Academias</p></div>
+        <div class="sector-item"><span>🚗</span><p>Talleres</p></div>
+      </div>
+      <p class="sectors-note">¿No ves el tuyo? Escríbeme — casi seguro puedo ayudarte.</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-tag">FAQ</span>
+        <h2 class="section-title">Preguntas<br/><em>frecuentes</em></h2>
+      </div>
+      <div class="faq-cols">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Cuánto tarda mi proyecto? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Una web profesional está lista en <strong>2 a 4 semanas</strong>. Las automatizaciones y chatbots se configuran en paralelo o después. Siempre con plazo estimado claro antes de empezar.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Necesito conocimientos técnicos? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Para nada. Me encargo de todo lo técnico. Si quieres cambiar algo, te explico cómo hacerlo en 2 minutos — o lo hago yo. Para eso está el mantenimiento.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Puedo empezar solo con una web básica? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Sí. El plan Esencial está hecho para eso. Puedes ampliar más adelante sin compromiso. Mi enfoque es ajustar el servicio y precio a lo que tú realmente necesitas ahora.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Cómo funciona el mantenimiento? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Cubre actualizaciones de contenido, soporte técnico, supervisión de automatizaciones y ajustes al chatbot. Es opcional pero muy recomendable para que todo funcione siempre.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿El chatbot funciona con WhatsApp? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Sí. El chatbot puede integrarse en tu web, WhatsApp Business e Instagram. Las integraciones dependen del plan — consúltame qué canales te interesan más.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Puedo cancelar el mantenimiento cuando quiera? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Sí, sin permanencia mínima. Tu web y automatizaciones siempre son tuyas. Si decides pausar o cancelar, solo me lo dices con antelación.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Con qué información empezamos? <span class="faq-ic">+</span></button>
+            <div class="faq-a"><p>Con una conversación de 30 minutos es suficiente. Yo propongo la estructura, el diseño y los textos orientativos. Tú revisas y apruebas en cada paso.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-tag">Blog Gratis</span>
+        <h2 class="section-title">IA y negocios locales:<br/><em>lo que necesitas saber</em></h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <span class="blog-cat">Chatbots</span>
+          <h4>¿Qué es un chatbot con IA y por qué tu negocio lo necesita?</h4>
+          <p>Un empleado que no se cansa, no se va de vacaciones y atiende a 100 clientes a la vez. Te explico cómo funciona y qué impacto tiene en tus ventas.</p>
+          <div class="blog-foot"><span>5 min</span><a href="#contacto">Leer más →</a></div>
+        </article>
+        <article class="blog-card">
+          <span class="blog-cat">Automatización</span>
+          <h4>Cómo recuperar clientes que llevan meses sin volver</h4>
+          <p>El 80% de los negocios locales no hace nada cuando un cliente desaparece. Hay un sistema automático que puede reactivarlos en el momento correcto.</p>
+          <div class="blog-foot"><span>4 min</span><a href="#contacto">Leer más →</a></div>
+        </article>
+        <article class="blog-card">
+          <span class="blog-cat">Visibilidad</span>
+          <h4>SEO local: la inversión más inteligente para tu negocio</h4>
+          <p>Tus clientes buscan "negocio cerca de mí" en Google. Te explico cómo aparecer en esos resultados y qué diferencia hace en tus visitas y reservas.</p>
+          <div class="blog-foot"><span>6 min</span><a href="#contacto">Leer más →</a></div>
+        </article>
+        <article class="blog-card">
+          <span class="blog-cat">WhatsApp</span>
+          <h4>WhatsApp Business + IA: la combinación que está cambiando el juego</h4>
+          <p>Reservas automáticas, confirmaciones y recordatorios sin levantar el teléfono. Esta integración ahorra horas diarias en negocios locales.</p>
+          <div class="blog-foot"><span>5 min</span><a href="#contacto">Leer más →</a></div>
+        </article>
+        <article class="blog-card">
+          <span class="blog-cat">Estrategia</span>
+          <h4>5 errores digitales que cuestan clientes cada día</h4>
+          <p>Desde no tener web hasta ignorar Google Maps. Estos son los errores más comunes — y los más fáciles de corregir con el apoyo adecuado.</p>
+          <div class="blog-foot"><span>7 min</span><a href="#contacto">Leer más →</a></div>
+        </article>
+        <article class="blog-card">
+          <span class="blog-cat">Leads</span>
+          <h4>Qué es un lead y cómo no perderlo antes de que convierta</h4>
+          <p>Un lead es alguien que mostró interés. El problema es que se enfría rápido. Te explico el sistema automático que hace el seguimiento por ti.</p>
+          <div class="blog-foot"><span>5 min</span><a href="#contacto">Leer más →</a></div>
+        </article>
+      </div>
+      <div class="blog-cta-row">
+        <p>¿Quieres recibir más contenido como este?</p>
+        <a href="mailto:sergio.m.r.2000@gmail.com?subject=Suscripción%20blog%20Semart%20Studio" class="btn-ghost">Suscribirme gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final" id="contacto">
+    <div class="cta-bg-img">
+      <img src="img/sergio-fachada.png" alt="" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container cta-inner">
+      <span class="label-tag tag-light">¿Listo para crecer?</span>
+      <h2 class="cta-title">TU PRÓXIMO CLIENTE<br/><span>TE BUSCA ONLINE</span></h2>
+      <div class="cta-beam"></div>
+      <p>Una conversación de 20 minutos puede cambiar el rumbo de tu negocio.<br/>Sin compromiso. Sin tecnicismos. Solo resultados.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/34XXXXXXXXX?text=Hola%20Sergio%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Semart%20Studio" class="btn-cta-wa" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:sergio.m.r.2000@gmail.com?subject=Consulta%20Semart%20Studio" class="btn-cta-email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Email
+        </a>
+      </div>
+      <p class="cta-reply">Respondo en menos de 24h — normalmente antes</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/LOGO sin círculo.png" alt="Semart Studio" class="footer-logo" />
+        <p>Soluciones digitales con IA para negocios locales que quieren crecer.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram" class="soc-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/34XXXXXXXXX" aria-label="WhatsApp" class="soc-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Servicios</h5>
+        <a href="#web-profesional">Web Profesional</a>
+        <a href="#automatizaciones">Automatizaciones</a>
+        <a href="#chatbot">Chatbot 24h</a>
+        <a href="#precios">Pack Completo</a>
+      </div>
+      <div class="footer-col">
+        <h5>Info</h5>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#blog">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <a href="https://wa.me/34XXXXXXXXX" target="_blank">WhatsApp</a>
+        <a href="mailto:sergio.m.r.2000@gmail.com">sergio.m.r.2000@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Semart Studio · Todos los derechos reservados</p>
+        <div class="footer-legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Aviso legal</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/34XXXXXXXXX?text=Hola%20Sergio%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Semart%20Studio" class="wa-float" target="_blank" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-tooltip">¡Escríbeme!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
